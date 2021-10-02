@@ -1,4 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="fon_border">5dp</dimen>
+    <dimen name="sizeButtonlike">293dp</dimen>
+    <dimen name="sizeButtonReset">177dp</dimen>
+    <dimen name="sizeTexts">50sp</dimen>
+    <dimen name="distanseFromText">15dp</dimen>
+    <dimen name="likesSizeText">21dp</dimen>
+    <dimen name="distansFromlLikes">15dp</dimen>
 </resources>

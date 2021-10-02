@@ -3,8 +3,10 @@ package com.example.clicker1;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     private Integer counter = 0;
@@ -12,6 +14,20 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+    }
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        outState.putInt("Counter", counter);
+    }
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+        counter = savedInstanceState.getInt("Counter");
+        resetUI();
+    }
+
+    private void resetUI() {
+        ((TextView) findViewById(R.id.txt_counter)).setText(counter.toString());
+
     }
 
     public void onClickBtnAddStudents(View view) {

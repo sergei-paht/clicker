@@ -13,21 +13,21 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/ground"
-        android:textColor="#E91E63"
+        android:textColor="@color/colorTexts"
         android:gravity="center"
-        android:padding="15dp"
-        android:textSize="50sp" />
+        android:padding="@dimen/distanseFromText"
+        android:textSize="@dimen/sizeTexts" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:padding="15dp"
+        android:padding="@dimen/distansFromlLikes"
         android:text="@string/txt_students"
-        android:textColor="#E91E63"
-        android:textSize="21dp" />
+        android:textColor="@color/colorTexts"
+        android:textSize="@dimen/likesSizeText" />
 
     <Button
-        android:layout_width="293dp"
+        android:layout_width="@dimen/sizeButtonlike"
         android:layout_height="wrap_content"
         android:background="@color/button"
         android:onClick="onClickBtnAddStudents"
@@ -36,7 +36,7 @@
 
     <Button
         android:id="@+id/button"
-        android:layout_width="177dp"
+        android:layout_width="@dimen/sizeButtonReset"
         android:layout_height="wrap_content"
         android:onClick="onClickBtnDellStudents"
         android:text="@string/sbros" />
